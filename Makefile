@@ -10,7 +10,7 @@ SIM_TOP_V = $(BUILD_DIR)/$(SIM_TOP).v
 SIM_ARGS =
 $(SIM_TOP_V): $(SCALA_FILE)
 	mkdir -p $(@D)
-	mill GCD.test.runMain top.$(SIM_TOP) -td $(@D) --full-stacktrace --output-file $(@F)
+	mill Smart.test.runMain top.$(SIM_TOP) -td $(@D) --full-stacktrace --output-file $(@F)
 
 # -c:$(SIMTOP):-o:$(@D)/$(@F).conf $(SIM_ARGS)
 

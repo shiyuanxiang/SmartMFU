@@ -36,7 +36,7 @@ object chiseltest extends CommonModule with SbtModule {
   }
 }
 
-object GCD extends CommonModule with SbtModule {
+object Smart extends CommonModule with SbtModule {
   override def millSourcePath = millOuterCtx.millSourcePath
 
   override def forkArgs = Seq("-Xmx10G")
